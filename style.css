@@ -1,0 +1,21 @@
+body {
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+.img-responsive {
+    max-width: 75%;
+    height: auto;
+}
+img {
+    padding: 15px;
+}
+.displayBox {
+    width: 100%;
+}
+.scroll-box {
+    overflow-y: auto;
+    height: 500px;
+    float: left;
+    padding: 16px;
+}
