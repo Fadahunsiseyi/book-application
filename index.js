@@ -19,11 +19,13 @@ function loadBook(filename, displayName) {
                 if (currentBook[i] === ".") {
                     currentBook =
                         currentBook.substring(0, i + 1) +
-                        "<br>" +
+                        "<br>"  + "<br>" +   "<br>" +
                         currentBook.substring(i + 1, currentBook.length);
                         i += 4;
                 }
             }
+            //regular expression to get break of words
+            currentBook = currentBook.replace(/(?:\n|\r|\n)/g, '<br>')
             // getDocsStats(currentBook)
             //remove line breaks and carriage returns and replace with a <br> using REGULAR EXPRESSION
             // currentBook = currentBook.replace(/(?:\r\n|\r|\n)/g, "<br>")
@@ -31,7 +33,7 @@ function loadBook(filename, displayName) {
             var element = document.getElementById("fileContent");
             element.scrollTop = 0;
         }
-    };
+    }
 }
 
 //get the stats for the book
